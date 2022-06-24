@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import { App, Page, Navbar, Block, Button } from 'konsta/react';
 
-function App() {
+
+function ReactApp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <App theme="ios">
+      <Page>
+        <Navbar title="My App" />
+        <Block>
+          <p>Here comes my app</p>
+          <h1 className="text-3xl font-bold underline">
+            Hello world!
+          </h1>
+          <Button colors={{
+            bg: 'bg-gray-dark',
+          }}>Action</Button>
+        </Block>
+      </Page>
+    </App>
   );
 }
 
-export default App;
+export default ReactApp;
