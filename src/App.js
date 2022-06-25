@@ -13,9 +13,7 @@ function ReactApp() {
           <h1 className="text-3xl font-bold underline">
             Hello world!
           </h1>
-          <Button colors={{
-            bg: 'bg-gray-dark',
-          }}>Action</Button>
+          <Button>Action</Button>
         </Block>
       </Page>
     </App>
